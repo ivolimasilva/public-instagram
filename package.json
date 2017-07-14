@@ -1,5 +1,5 @@
 {
-	"name": "instagram-scraper",
+	"name": "public-instagram",
 	"version": "0.0.0",
 	"description": "Tool to scrape instagram for public content.",
 	"main": "index.js",

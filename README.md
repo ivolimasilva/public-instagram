@@ -1,2 +1,2 @@
-# instagram-scraper
-Tool to scrape instagram for public content.
+# Public Instagram
+Tool to get Instagram's public content.
