@@ -1,0 +1,23 @@
+{
+	"name": "instagram-scraper",
+	"version": "0.0.0",
+	"description": "Tool to scrape instagram for public content.",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodejs index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ivolimasilva/instagram-scraper.git"
+	},
+	"author": {
+		"name": "Ivo Lima Silva",
+		"email": "ivolimasilva"
+	},
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/ivolimasilva/instagram-scraper/issues"
+	},
+	"homepage": "https://github.com/ivolimasilva/instagram-scraper#readme"
+}
