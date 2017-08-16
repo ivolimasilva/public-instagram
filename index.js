@@ -7,6 +7,9 @@ const
     URL_INSTAGRAM_EXPLORE_TAGS = 'https://instagram.com/explore/tags/',
     URL_INSTAGRAM_GRAPHQL_QUERY = 'https://www.instagram.com/graphql/query/';
 
+exports = module.exports = require('./lib');
+
+/*
 exports.search = {
 
     init: (_query_id, _limit, _timeout) => {
@@ -97,3 +100,4 @@ exports.search = {
     }
 
 }
+*/
