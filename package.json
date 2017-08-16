@@ -1,7 +1,7 @@
 {
 	"name": "public-instagram",
 	"version": "0.0.1",
-	"description": "Tool to get Instagram's public content.",
+	"description": "Tool to fetch Instagram's public content.",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"

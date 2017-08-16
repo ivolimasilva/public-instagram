@@ -1,2 +1,2 @@
 # Public Instagram
-Tool to get Instagram's public content.
+Tool to fetch Instagram's public content.
