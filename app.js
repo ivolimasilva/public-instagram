@@ -1,87 +1,44 @@
-var Axios = require('axios'),
-    tag_name = 'hpow',
-    query_id = 17875800862117404;
+var instagram = require('./index');
 
-Axios.get('https://www.instagram.com/explore/tags/' + tag_name, {
-    params: {
-        __a: 1
-    }
-})
-    .then((response) => {
-        console.log('1. Success.');
-        console.log('Tag name:\t' + response.data.tag.name);
-        console.log('Media count:\t' + response.data.tag.media.count);
-        console.log('Page\'s Info:');
-        console.log('\tNext page?\t' + response.data.tag.media.page_info.has_next_page);
-        console.log('\tCursor?\t\t' + response.data.tag.media.page_info.end_cursor);
+// Get recent
+// instagram.search.hashtag.recent('hpow', 1000);
 
-        console.log('First page:');
-        var i = 0;
-        response.data.tag.media.nodes.forEach((node) => {
-            console.log(++i + '. ' + node.id);
-        });
+async function go() {
+    var info = await instagram.tags.info('hpow');
+    console.log(info);
 
-        console.log('\n\n\n');
+    const posts = await instagram.tags.recent('hpow', 1000);
+    console.log(posts);
+};
 
-        if (response.data.tag.media.page_info.has_next_page) {
-            Axios.get('https://www.instagram.com/graphql/query/', {
-                params: {
-                    query_id: query_id,
-                    variables: {
-                        tag_name: tag_name,
-                        first: 500,
-                        after: response.data.tag.media.page_info.end_cursor
-                    }
-                }
-            })
-                .then((response) => {
-                    console.log('2. Success.');
-                    console.log('Tag name:\t' + response.data.data.hashtag.name);
-                    console.log('Media count:\t' + response.data.data.hashtag.edge_hashtag_to_media.count);
-                    console.log('Page\'s Info:');
-                    console.log('\tNext page?\t' + response.data.data.hashtag.edge_hashtag_to_media.page_info.has_next_page);
-                    console.log('\tCursor?\t\t' + response.data.data.hashtag.edge_hashtag_to_media.page_info.end_cursor);
+go();
 
-                    console.log('Second page:');
-                    i = 0;
-                    response.data.data.hashtag.edge_hashtag_to_media.edges.forEach((edge) => {
-                        console.log(++i + '. ' + edge.node.id);
-                    });
-                })
-                .catch((error) => {
-                    console.log('2. Insuccess.');
-                    console.log(error);
-                });
-        }
-
-    })
-    .catch((error) => {
-        console.log('1. Insuccess.');
-        console.log(error);
-    });
 
 /*
-Axios.get('https://www.instagram.com/graphql/query/', {
-    params: {
-        query_id: 17875800862117404,
-        variables: {
-            tag_name: 'hpow',
-            first: 651
+
+const
+    puppeteer = require('puppeteer'),
+    URL = require('url');
+
+(async () => {
+
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.setRequestInterceptionEnabled(true);
+    page.on('request', request => {
+        if (request.url.startsWith('https://www.instagram.com/graphql/query/')) {
+            console.log('Query ID:\t', request.url.split('=')[1].split('&')[0]);
+        } else {
+            request.continue();
         }
-    },
-    timeout: 3600000
-})
-    .then((response) => {
-        console.log('Success.');
-        console.log('Popular media:\t' + response.data.data.hashtag.edge_hashtag_to_top_posts.edges.length);
-        console.log('Recent media:\t' + response.data.data.hashtag.edge_hashtag_to_media.edges.length);
-        console.log('Media count:\t' + response.data.data.hashtag.edge_hashtag_to_media.count);
-        console.log('Page\'s Info:');
-        console.log('\tNext page?\t' + response.data.data.hashtag.edge_hashtag_to_media.page_info.has_next_page);
-        console.log('\tCursor?\t\t' + response.data.data.hashtag.edge_hashtag_to_media.page_info.end_cursor);
-    })
-    .catch((error) => {
-        console.log('Insuccess.');
-        console.log(error.response);
     });
+    await page.goto('https://www.instagram.com/explore/tags/instagram/');
+
+    // Click on 'more images'
+    await page.click('._1cr2e._epyes');
+
+    browser.close();
+
+})();
+
 */
