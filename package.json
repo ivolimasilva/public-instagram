@@ -22,6 +22,7 @@
 	"homepage": "https://github.com/ivolimasilva/public-instagram#readme",
 	"dependencies": {
 		"axios": "^0.16.2",
+		"bluebird": "^3.5.0",
 		"puppeteer": "^0.9.0",
 		"url": "^0.11.0"
 	}

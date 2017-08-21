@@ -1,12 +1,11 @@
 var instagram = require('./index');
 
-// Initialization
-await instagram.init();
-
 // Get recent
 // instagram.search.hashtag.recent('hpow', 1000);
-
-console.log(instagram.tags.info('hpow'));
+instagram.tags.info('hpow')
+    .then((info) => {
+        console.log(info);
+    });
 
 /*
 
