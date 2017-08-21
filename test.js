@@ -2,10 +2,17 @@ var instagram = require('./index');
 
 // Get recent
 // instagram.search.hashtag.recent('hpow', 1000);
-instagram.tags.info('hpow')
-    .then((info) => {
-        console.log(info);
-    });
+
+async function go() {
+    var info = await instagram.tags.info('hpow')
+    console.log(info);
+
+    // const posts = await instagram.tags.recent('hpow', 1000);
+    // console.log(posts);
+};
+
+go();
+
 
 /*
 
