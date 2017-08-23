@@ -4,7 +4,7 @@
 	"description": "Tool to fetch Instagram's public content.",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha --timeout 50000 'lib/**/*.test.js'"
+		"test": "mocha 'lib/**/*.test.js' --timeout 50000"
 	},
 	"repository": {
 		"type": "git",
