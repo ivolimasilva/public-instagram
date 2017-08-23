@@ -10,7 +10,7 @@ async function go() {
     const hashtags = await instagram.tags.search('canon');
     console.log(hashtags);
 
-    const post = await instagram.media.get('BYIkyEnA3un');
+    const post = await instagram.media.get('BQYvbMmAgHz');
     console.log(post);
 };
 
