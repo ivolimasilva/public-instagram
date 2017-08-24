@@ -17,6 +17,9 @@ async function go() {
     const user = await instagram.users.info('instagram');
     console.log(user);
 
+    const posts = await instagram.users.posts('instagram');
+    console.log(posts.length);
+
 };
 
 go();
