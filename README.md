@@ -59,7 +59,7 @@ example();
 
 ## Async/Await
 
-`public-instagram` uses Async/Await. In order to use it correctly, you need atleast `Node v7.6`.
+`public-instagram` uses Async/Await. In order to use it as intended, you need atleast `Node v7.6`.
 
 ## Resources
 

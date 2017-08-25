@@ -1,6 +1,6 @@
 {
 	"name": "public-instagram",
-	"version": "0.0.9",
+	"version": "0.1.0",
 	"description": "Tool to fetch Instagram's public content.",
 	"main": "index.js",
 	"scripts": {
