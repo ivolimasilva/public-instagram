@@ -14,10 +14,16 @@ Tool to fetch Instagram's public content.
 
 ## Installing
 
+Using npm
+
+```
+npm i public-instagram
+```
+
 Using npm (& git):
 
 ```
-npm install https://github.com/ivolimasilva/public-instagram.git
+npm i https://github.com/ivolimasilva/public-instagram.git
 ```
 
 ## Examples
