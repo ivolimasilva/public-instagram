@@ -1,4 +1,4 @@
-# instagram-scraper
+# public-instagram
 
 [![unit test](https://img.shields.io/badge/test-passed-brightgreen.svg)]()
 
@@ -17,13 +17,13 @@ Tool to fetch Instagram's public content.
 Using npm (& git):
 
 ```
-npm install https://github.com/ivolimasilva/instagram-scraper.git
+npm install https://github.com/ivolimasilva/public-instagram.git
 ```
 
 ## Examples
 
 ```
-var instagram = require('instagram-scraper');
+var instagram = require('public-instagram');
 
 // Async function in order to use await
 async function example() {
