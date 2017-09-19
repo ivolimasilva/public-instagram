@@ -1,5 +1,5 @@
 {
-	"name": "public-instagram",
+	"name": "instagram-scraper",
 	"version": "0.1.0",
 	"description": "Tool to fetch Instagram's public content.",
 	"main": "index.js",
@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ivolimasilva/public-instagram.git"
+		"url": "git+https://github.com/ivolimasilva/instagram-scraper.git"
 	},
 	"author": {
 		"name": "Ivo Lima Silva",
@@ -17,9 +17,9 @@
 	},
 	"license": "GPL-3.0",
 	"bugs": {
-		"url": "https://github.com/ivolimasilva/public-instagram/issues"
+		"url": "https://github.com/ivolimasilva/instagram-scraper/issues"
 	},
-	"homepage": "https://github.com/ivolimasilva/public-instagram#readme",
+	"homepage": "https://github.com/ivolimasilva/instagram-scraper#readme",
 	"dependencies": {
 		"axios": "^0.16.2",
 		"bluebird": "^3.5.0",
