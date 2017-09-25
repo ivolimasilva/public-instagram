@@ -38,7 +38,7 @@ async function example() {
     var info = await instagram.tags.info('instagram');
     console.log(info);
 
-    // Get recent posts that contain an hashtag
+    // Get the 1000 most recent posts that contain an hashtag
     const posts = await instagram.tags.recent('instagram', 1000);
     console.log(posts.length);
 
@@ -49,6 +49,10 @@ async function example() {
     // Get media by shortcode
     const post = await instagram.media.get('BP-rXUGBPJa');
     console.log(post);
+
+    // Get the 1000 most recent comments of that post
+    const comments = await instagram.media.comments('BP-rXUGBPJa', 1000);
+    console.log(comments);
 
     // Get information about a public user
     const user = await instagram.users.info('instagram');
