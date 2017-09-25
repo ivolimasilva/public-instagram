@@ -6,6 +6,12 @@
 	"scripts": {
 		"test": "mocha 'lib/**/*.test.js' --timeout 100000"
 	},
+	"keywords": [
+		"instagram",
+		"scraper",
+		"public",
+		"api"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ivolimasilva/public-instagram.git"
