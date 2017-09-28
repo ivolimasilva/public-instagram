@@ -16,26 +16,26 @@ Tool to fetch Instagram's public content.
 
 Using npm
 
-```
+```bash
 npm i public-instagram
 ```
 
 Using npm (& git):
 
-```
+```bash
 npm i https://github.com/ivolimasilva/public-instagram.git
 ```
 
 ## Examples
 
-```
-var instagram = require('public-instagram');
+```js
+import instagram from 'public-instagram';
 
 // Async function in order to use await
 async function example() {
 
     // Get information about hashtag
-    var info = await instagram.tags.info('instagram');
+    const info = await instagram.tags.info('instagram');
     console.log(info);
 
     // Get the 1000 most recent posts that contain an hashtag
