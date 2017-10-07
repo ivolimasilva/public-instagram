@@ -58,7 +58,7 @@ async function example() {
     const user = await instagram.users.info('instagram');
     console.log(user);
 
-    // Get posts from a public user
+    // Get all posts from a public user
     const posts = await instagram.users.posts('instagram');
     console.log(posts.length);
 
