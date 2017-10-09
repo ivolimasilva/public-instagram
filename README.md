@@ -42,6 +42,10 @@ async function example() {
     const posts = await instagram.tags.recent('instagram', 1000);
     console.log(posts.length);
 
+    // Get the most popular posts that contain an hashtag
+    const posts = await instagram.tags.top('instagram');
+    console.log(posts);
+
     // Search hashtags by a string field
     const hashtags = await instagram.tags.search('instagram');
     console.log(hashtags);
