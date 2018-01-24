@@ -6,7 +6,7 @@ Tool to fetch Instagram's public content.
 
 ## Features
 
-- Fetch any pubic posts (images only)
+- Fetch any public posts (images only)
 - Search for hashtags and get information
 - Fetch recent posts by hashtag
 - Search for user's (public) information
