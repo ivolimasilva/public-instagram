@@ -14,16 +14,12 @@ Tool to fetch Instagram's public content.
 
 ## Installing
 
-Using npm
-
-```bash
-npm i public-instagram
-```
+Fixed the bugs with scraping in the original version by ivolimasilva
 
 Using npm (& git):
 
 ```bash
-npm i https://github.com/ivolimasilva/public-instagram.git
+npm i https://github.com/xianghui/public-instagram.git
 ```
 
 ## Examples
@@ -40,7 +36,8 @@ async function example() {
 
     // Get the 1000 most recent posts that contain an hashtag
     const posts = await instagram.tags.recent('instagram', 1000);
-    console.log(posts.length);
+    console.log(posts);
+    console.log("#length:", posts.length);
 
     // Get the most popular posts that contain an hashtag
     const posts = await instagram.tags.top('instagram');
@@ -64,6 +61,7 @@ async function example() {
 
     // Get all posts from a public user
     const posts = await instagram.users.posts('instagram');
+    console.log(posts);
     console.log(posts.length);
 
 };
