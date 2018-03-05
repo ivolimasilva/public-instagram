@@ -1,7 +1,5 @@
 # public-instagram
 
-[![unit test](https://img.shields.io/badge/status-failing-red.svg)]()
-
 Tool to fetch Instagram's public content.
 
 ## Features
