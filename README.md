@@ -9,6 +9,7 @@ Tool to fetch Instagram's public content.
 - Fetch recent posts by hashtag
 - Search for user's (public) information
 - Fetch posts by (public) user
+- Option to add hardcoded query hash (set in default.js)
 
 ## Installing
 
