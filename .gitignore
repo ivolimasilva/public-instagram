@@ -124,3 +124,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+### CommonJS transpiled files ###
+es/
+lib/
