@@ -128,3 +128,7 @@ $RECYCLE.BIN/
 ### CommonJS transpiled files ###
 es/
 lib/
+
+### Nyc ###
+.nyc_output
+coverage

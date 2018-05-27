@@ -1,5 +1,8 @@
 {
     "presets": [
         "moxy"
+    ],
+    "plugins": [
+        "transform-runtime"
     ]
 }
