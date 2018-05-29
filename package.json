@@ -49,6 +49,7 @@
 	},
 	"homepage": "https://github.com/ivolimasilva/public-instagram#readme",
 	"dependencies": {
+		"cheerio": "^1.0.0-rc.2",
 		"isomorphic-fetch": "^2.2.1",
 		"yuri": "^1.0.3"
 	},
