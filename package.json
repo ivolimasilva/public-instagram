@@ -1,31 +1,16 @@
 {
-	"name": "public-instagram",
-	"version": "0.6.1",
-	"description": "Tool to fetch Instagram's public content.",
+	"name": "tri-public-instagram",
+	"version": "1.0.1",
+	"description": "TRI instagram api",
 	"main": "index.js",
-	"scripts": {
-		"test": "mocha 'lib/**/*.test.js' --timeout 100000"
-	},
-	"keywords": [
-		"instagram",
-		"scraper",
-		"public",
-		"api"
-	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ivolimasilva/public-instagram.git"
+		"url": "git+https://github.com/burakduganci/public-instagram.git"
 	},
 	"author": {
-		"name": "Ivo Lima Silva",
-		"email": "ivolimasilva@outlook.com",
-		"url": "http://ivolimasilva.xyz"
+		"name": "TRI Apps"
 	},
-	"license": "GPL-3.0",
-	"bugs": {
-		"url": "https://github.com/ivolimasilva/public-instagram/issues"
-	},
-	"homepage": "https://github.com/ivolimasilva/public-instagram#readme",
+	"homepage": "https://github.com/burakduganci/public-instagram#readme",
 	"dependencies": {
 		"axios": "^0.16.2",
 		"bluebird": "^3.5.0",
